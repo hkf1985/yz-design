@@ -1,0 +1,43 @@
+@import "../../../assets/color";
+.right-nav{
+  overflow-y: auto;
+  box-shadow: 2px 0px 2px rgba(0,0,0,.1);
+  h2{
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 20px 0;
+  }
+  ul{
+    padding-bottom: 20px;
+  }
+  li{
+    h3{
+      font-size: 16px;
+      padding-left: 10px;
+      height: 44px;
+      line-height: 44px;
+    }
+    .list{
+      padding-left: 10px;
+      overflow: hidden;
+      a{
+        font-size: 14px;
+        padding-left: 10px;
+        line-height: 32px;
+        display: block;
+        cursor: pointer;
+        color: @color-text-paragraph;
+        border-left: 2px solid @white;
+      }
+      a:hover{
+        color: @brand-primary;
+      }
+      a.active{
+        background-color:fade(@brand-primary,20%);
+        color: @brand-primary;
+        border-left-color: @blue;
+      }
+    }
+  }
+}

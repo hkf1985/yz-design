@@ -1,0 +1,37 @@
+<h2>flex</h2>
+<nrs-white-space></nrs-white-space>
+<h3>flex简要介绍</h3>
+<div>
+  <h4>1.flex容器的两个主要概念</h4>
+  <p>水平主轴（main axis）和垂直交叉主轴（cross axis）这两者是理解flex的开始，必须明白flex是有着这两个东西的，因为在flex父块内的子块的分布顺序排布方式与这两者是紧密关联的，请先记住一个是沿水平方向从左到右（或者从右到左。子元素的开始的位置称为main start，结束为main end）排列子元素的水平主轴，另一个是从上到下（或者从下到上 。子元素的开始的位置称为cross starts，结束为cross end）排列子元素的垂直交叉主轴。</p>
+  <h4>2.在flex容器内可设置的六个属性</h4>
+  <ol>
+    <li>
+      <h5><1> flex-direction   //控制主轴的布局方式（子元素的排列方向）</h5>
+      <p>属性值：</p>
+      <ol>
+        <li>(1) row  //子元素从水平方向的左端开始排列   （默认值）</li>
+        <li>(2) row-reverse  //子元素从水平方向的右端开始排列</li>
+        <li>(3) column    //子元素布局从垂直方向，从上往下</li>
+        <li>(4) column-reverse  //子元素布局从垂直方向，从下往上</li>
+      </ol>
+    </li>
+    <li>
+    <h5><2> flex-wrap //子元素的布局排列的换行设定</h5>
+    <p>属性值：</p>
+    <ol>
+      <li>(1) nowrap  //不换行  （默认值）</li>
+      <li>(2) wrap //换行，第一行在上方</li>
+      <li>(3) wrap-reverse // 换行，第一行在下方</li>
+    </ol>
+  </li>
+    <li>
+      <h5><3>flex-flow  //前面flex-direction和flex-wrap的组合形式，作用：子元素的排列方式和换行情况的设定</h5>
+      <p>属性值：</p>
+      <ol>
+        <li>(1) flex-wrap  :  row nowrap  //（默认值） </li>
+        <li>(2) 类似1这种使用flex-direction和flex-wrap的属性值的组合</li>
+      </ol>
+    </li>
+  </ol>
+</div>

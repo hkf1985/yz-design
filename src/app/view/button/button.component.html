@@ -1,0 +1,165 @@
+<h2>Button 按钮</h2>
+
+<div class="table">
+  <div class="clear header">
+    <h4 class="win-10">属性</h4>
+    <h4 class="win-70">说明</h4>
+    <h4 class="win-10">类型</h4>
+    <h4 class="win-10">默认值</h4>
+  </div>
+  <ul class="list">
+    <li class="clear" *ngFor="let item of data">
+      <p class="win-10">{{item.attr}}</p>
+      <p class="win-70">{{item.explain}}</p>
+      <p class="win-10">{{item.type}}</p>
+      <p class="win-10">{{item.default}}</p>
+    </li>
+  </ul>
+</div>
+
+<h2>按钮示例</h2>
+
+<div class="example">
+    <app-mobile-view>
+      <div class="button-wrap">
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'small'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [disabled]="true">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [type]="'warning'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [type]="'warning'" [disabled]="true">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [type]="'default'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [type]="'default'" [disabled]="true">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'" [disabled]="true">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'" [type]="'warning'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'" [type]="'warning'" [disabled]="true">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'" [type]="'default'">小按钮</nrs-button>
+        <nrs-button [size]="'small'" [shape]="'hollow'" [type]="'default'" [disabled]="true">小按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'small'" [shape]="'radio'" [iconType]="'home'"></nrs-button>
+        <nrs-button [size]="'small'" [shape]="'radio'" [iconType]="'map2'" [disabled]="true"></nrs-button>
+        <nrs-button [size]="'small'" [type]="'warning'" [shape]="'radio'" [iconType]=" 'map'" ></nrs-button>
+        <nrs-button [size]="'small'" [type]="'warning'" [shape]="'radio'" [iconType]=" 'history'" [disabled]="true"></nrs-button>
+        <nrs-button [size]="'small'" [type]="'default'" [shape]="'radio'" [iconType]=" 'clock'" ></nrs-button>
+        <nrs-button [size]="'small'" [type]="'default'" [shape]="'radio'" [iconType]=" 'clock2'" [disabled]="true"></nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <h2>中等按钮</h2>
+        <nrs-button [size]="'middle'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [type]="'warning'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [type]="'warning'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [type]="'default'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [type]="'default'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'middle'" [shape]="'radio'" [iconType]=" 'home'"></nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'radio'" [iconType]=" 'home2'" [disabled]="true"></nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'" [shape]="'radio'" [iconType]=" 'clock'" ></nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'" [shape]="'radio'" [iconType]=" 'home3'" [disabled]="true"></nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'" [shape]="'radio'" [iconType]=" 'map'" ></nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'" [shape]="'radio'" [iconType]=" 'map2'" [disabled]="true"></nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'middle'" [iconType]=" 'download'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [disabled]="true" [iconType]=" 'download'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'" [iconType]=" 'download'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'warning'" [iconType]=" 'download'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'" [iconType]=" 'download'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [type]="'default'" [iconType]=" 'download'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'" [type]="'warning'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'" [type]="'warning'" [disabled]="true">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'" [type]="'default'">中等按钮</nrs-button>
+        <nrs-button [size]="'middle'" [shape]="'hollow'" [iconType]=" 'download'" [type]="'default'" [disabled]="true">中等按钮</nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [type]="'warning'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [type]="'default'">大按钮</nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [type]="'warning'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [type]="'default'">大按钮</nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [type]="'warning'"  [disabled]="true"> 大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [type]="'default'"  [disabled]="true">大按钮</nrs-button>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'" >大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'"  [type]="'warning'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'" [type]="'default'" >大按钮</nrs-button>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'"  [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'"  [type]="'warning'" [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'large'" [iconType]=" 'download'" [shape]="'hollow'" [type]="'default'" [disabled]="true">大按钮</nrs-button>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-white-space [height]="20"></nrs-white-space>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [type]="'warning'" [loading]="loader" (onclick)="updateData()">updateData</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [type]="'warning'" [loading]="loaderTwo"   [disabled]="true" (onclick)="updateDataTwo()"> updateDataTwo</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [type]="'default'">大按钮</nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [type]="'warning'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [type]="'default'">大按钮</nrs-button>
+
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [type]="'default'"  [disabled]="true">大按钮</nrs-button>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'" >大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'"  [type]="'warning'">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'" [type]="'default'" >大按钮</nrs-button>
+
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'"  [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'"  [type]="'warning'" [disabled]="true">大按钮</nrs-button>
+        <nrs-white-space [height]="20"></nrs-white-space>
+        <nrs-button [size]="'full'" [iconType]=" 'download'" [shape]="'hollow'" [type]="'default'" [disabled]="true">大按钮</nrs-button>
+      </div>
+    </app-mobile-view>
+
+
+
+</div>

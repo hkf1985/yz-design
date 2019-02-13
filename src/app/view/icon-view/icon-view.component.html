@@ -1,0 +1,43 @@
+<h2>Icon 图标</h2>
+
+<div class="table">
+  <div class="clear header">
+    <h4 class="win-10">属性</h4>
+    <h4 class="win-70">说明</h4>
+    <h4 class="win-10">类型</h4>
+    <h4 class="win-10">默认值</h4>
+  </div>
+  <ul class="list">
+    <li class="clear" *ngFor="let item of data">
+      <p class="win-10">{{item.attr}}</p>
+      <p class="win-70">{{item.explain}}</p>
+      <p class="win-10">{{item.type}}</p>
+      <p class="win-10">{{item.default}}</p>
+    </li>
+  </ul>
+</div>
+
+<h2>按钮示例</h2>
+
+<app-mobile-view>
+  <ul class="list-sample">
+    <li>
+      <nrs-icon [type]="'home'" [size]="11"></nrs-icon>
+    </li>
+    <li>
+      <nrs-icon [type]="'home'" [size]="13"></nrs-icon>
+    </li>
+    <li>
+      <nrs-icon [type]="'home'" [size]="15"></nrs-icon>
+    </li>
+    <li>
+      <nrs-icon [type]="'home'" [size]="17"></nrs-icon>
+    </li>
+    <li class="color-red">
+      <nrs-icon [type]="'home'" [size]="19"></nrs-icon>
+    </li>
+    <li class="color-blue">
+      <nrs-icon [type]="'home'" [size]="19"></nrs-icon>
+    </li>
+  </ul>
+</app-mobile-view>

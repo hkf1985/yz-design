@@ -1,0 +1,63 @@
+<h2>popover 气泡</h2>
+
+<div class="explain">
+  <p>只能在导航中使用，并需要和nrs-pop-item配合使用</p>
+</div>
+<h3>popover 气泡</h3>
+<div class="table">
+  <div class="clear header">
+    <h4 class="win-10">属性</h4>
+    <h4 class="win-60">说明</h4>
+    <h4 class="win-20">类型</h4>
+    <h4 class="win-10">默认值</h4>
+  </div>
+  <ul class="list">
+    <li class="clear" *ngFor="let item of data">
+      <p class="win-10">{{item.attr}}</p>
+      <p class="win-60">{{item.explain}}</p>
+      <p class="win-20">{{item.type}}</p>
+      <p class="win-10">{{item.default}}</p>
+    </li>
+  </ul>
+</div>
+<h3>pop-item 气泡列表</h3>
+<div class="table">
+  <div class="clear header">
+    <h4 class="win-10">属性</h4>
+    <h4 class="win-60">说明</h4>
+    <h4 class="win-20">类型</h4>
+    <h4 class="win-10">默认值</h4>
+  </div>
+  <ul class="list">
+    <li class="clear" *ngFor="let item of dataItem">
+      <p class="win-10">{{item.attr}}</p>
+      <p class="win-60">{{item.explain}}</p>
+      <p class="win-20">{{item.type}}</p>
+      <p class="win-10">{{item.default}}</p>
+    </li>
+  </ul>
+</div>
+<app-mobile-view>
+  <nrs-nav-top [leftContent]="leftContent" (leftClick)="backPrePage()" [rightContent]="rightContent" (rightClick)="lookPop()">按钮展示</nrs-nav-top>
+  <nrs-white-space></nrs-white-space>
+  <nrs-nav-top [leftContent]="leftContent" [type]="'dark'" (leftClick)="backPrePage()">按钮展示2</nrs-nav-top>
+  <nrs-white-space></nrs-white-space>
+  <nrs-nav-top [leftContent]="leftContent" [type]="'primary'" (leftClick)="backPrePage()">按钮展示3</nrs-nav-top>
+  <nrs-white-space></nrs-white-space>
+  <nrs-nav-top [leftContent]="leftContent" [type]="'red'" (leftClick)="backPrePage()">按钮展示4</nrs-nav-top>
+</app-mobile-view>
+
+
+<ng-template #leftContent>
+  <nrs-icon [type]=" 'back'" [size]="16"></nrs-icon>
+</ng-template>
+
+<ng-template #rightContent>
+  <nrs-popover [showPop]="showPopList" (closedPop)="hidePopover($event)" [popList]="popList"></nrs-popover>
+</ng-template>
+
+<ng-template #popList>
+  <ng-container *ngFor="let item of popLists">
+    <nrs-pop-item [link]="item.link" [iconType]="item.type">{{item.title}}</nrs-pop-item>
+  </ng-container>
+</ng-template>

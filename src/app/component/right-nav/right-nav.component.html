@@ -1,0 +1,39 @@
+<div class="right-nav" [ngStyle]="{'width.px':width,'height.px':height}">
+  <h2>YZ DESIGN</h2>
+  <ul>
+    <li>
+      <h3>布局</h3>
+      <div class="list">
+        <a routerLink="/flex"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">flex</a>
+        <a routerLink="/flexItem" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">flex-item</a>
+      </div>
+    </li>
+    <li>
+      <h3>按钮和图标</h3>
+      <div class="list">
+        <a routerLink=""  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">按钮</a>
+        <a routerLink="/icon" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">图标</a>
+      </div>
+    </li>
+    <li>
+      <h3>导航</h3>
+      <div class="list">
+        <a routerLink="/navTop"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">顶部导航</a>
+        <a routerLink="/popover" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">气泡</a>
+      </div>
+    </li>
+    <li>
+      <h3>数据输入</h3>
+      <div class="list">
+        <a routerLink="/uploadImg"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">图片上传</a>
+      </div>
+    </li>
+    <li>
+      <h3>数据加载</h3>
+      <div class="list">
+        <a routerLink="/scroll"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">数据更新</a>
+        <a routerLink="/pageReload" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">页面刷新</a>
+      </div>
+    </li>
+  </ul>
+</div>
